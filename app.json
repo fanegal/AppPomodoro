@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "AppPomodoro",
+    "name": "Pomodoro",
     "slug": "AppPomodoro",
     "version": "1.0.1",
     "entryPoint": "./src/App.js",
@@ -20,7 +20,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/prod.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.fanegal.AppPomodoro"
