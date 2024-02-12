@@ -3,8 +3,9 @@
     "name": "AppPomodoro",
     "slug": "AppPomodoro",
     "version": "1.0.0",
+    "entryPoint": "./src/App.js",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/prod.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -21,10 +22,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.fanegal.AppPomodoro"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d28b9bd6-3275-4c8c-93f9-f366fccacd43"
+      }
     }
   }
 }

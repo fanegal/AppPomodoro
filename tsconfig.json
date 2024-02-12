@@ -1,0 +1,9 @@
+{
+  "extends": "expo/tsconfig.base",
+  "include": [
+    "App.tsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.scss" 
+, "src/pages/Inicio/styles.js"  ]
+}
