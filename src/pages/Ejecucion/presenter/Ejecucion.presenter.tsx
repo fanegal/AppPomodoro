@@ -25,7 +25,7 @@ const EjecucionPresenter: React.FC<EjecucionPresenterProps> = ({
   const [minutos, setMinutos] = useState(M);
   const [segundos, setSegundos] = useState(S);  
   const [estado, setEstado] = useState(E);
-  const [ciclosCompletados, setCiclosCompletados] = useState(1);
+  const [ciclosCompletados, setCiclosCompletados] = useState(0);
 
   // Función para reproducir sonido y vibración
   const reproducirSonidoYVibrar = async (nuevoEstado) => {
@@ -67,13 +67,14 @@ const EjecucionPresenter: React.FC<EjecucionPresenterProps> = ({
               // Incrementar ciclos completados
               setCiclosCompletados(ciclosCompletados + 1);
               setCiclo(ciclo + 1);
-              if (ciclosCompletados === 4) {
+              if (ciclosCompletados === 3) {
                 // Preguntar al usuario si desea reiniciar la técnica
                 const reiniciar = confirm('¿Deseas reiniciar la técnica Pomodoro?');
                 if (reiniciar) {
                   // Reiniciar la técnica con un descanso de 15 minutos
                   setMinutos(15);//minutos del ultimo descanzo antes de volver a empezar
                   setCiclosCompletados(0);
+                  
                 } else {
                   // Regresar a la pantalla de inicio
                   navigation.navigate('Inicio');
@@ -86,6 +87,10 @@ const EjecucionPresenter: React.FC<EjecucionPresenterProps> = ({
                 reproducirSonidoYVibrar('Trabajando');
               }
             }
+            if(ciclo > 4){
+              setCiclo(1);
+            }
+
           } else {
             setMinutos(minutos - 1);
             setSegundos(59);
