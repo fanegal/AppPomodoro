@@ -2,7 +2,7 @@
   "expo": {
     "name": "Pomodoro",
     "slug": "AppPomodoro",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "entryPoint": "./src/App.js",
     "orientation": "portrait",
     "icon": "./assets/prod.png",
