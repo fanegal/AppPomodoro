@@ -23,7 +23,7 @@
         "foregroundImage": "./assets/prod.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.fanegal.AppPomodoro"
+      "package": "com.AppPomodoro.AppPomodoro"
     },
     "web": {
       "favicon": "./assets/favicon.png"
