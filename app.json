@@ -3,7 +3,6 @@
     "name": "Pomodoro",
     "slug": "AppPomodoro",
     "version": "1.0.3",
-    "entryPoint": "./src/App.js",
     "orientation": "portrait",
     "icon": "./assets/prod.png",
     "userInterfaceStyle": "light",
@@ -19,6 +18,11 @@
       "supportsTablet": true
     },
     "android": {
+      "permissions": [
+        "android.permission.VIBRATE",
+        "android.permission.ACCESS_NOTIFICATION_POLICY",
+        "android.permission.PLAY_SOUND"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/prod.png",
         "backgroundColor": "#ffffff"
